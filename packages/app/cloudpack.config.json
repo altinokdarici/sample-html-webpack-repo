@@ -1,0 +1,24 @@
+{
+    "$schema": "https://unpkg.com/@ms-cloudpack/common-types/schema/UserConfig.json",
+    "routes": [
+        {
+            "entry": "src/index.js",
+            "match": "/",
+            "renderScript": "scripts/html-loader.js"
+        }
+    ],
+    "bundlerCapabilitiesRegistry": {
+        "html":"@sample-html-webpack-repo/html-capability"
+    },
+    "packageSettings": [
+        {
+            "match": "@sample-html-webpack-repo/app",
+            "bundler": "webpack",
+            "bundlerCapabilities": {
+                "html": {
+                    "template": "src/index.ejs",
+                }
+            }
+        }
+    ]
+}

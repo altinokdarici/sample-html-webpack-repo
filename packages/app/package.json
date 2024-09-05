@@ -1,0 +1,18 @@
+{
+  "name": "@sample-html-webpack-repo/app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cloudpack start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@sample-html-webpack-repo/html-capability": "*",
+    "@ms-cloudpack/cli": "*"
+  }
+}
+
+

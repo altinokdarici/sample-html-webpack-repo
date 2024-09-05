@@ -1,0 +1,21 @@
+{
+  "name": "@sample-html-webpack-repo/html-capability",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "capability.js",
+  "exports": {
+    ".": {
+      "import": "./capability.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.6.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

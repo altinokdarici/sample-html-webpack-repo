@@ -8,15 +8,20 @@
         }
     ],
     "bundlerCapabilitiesRegistry": {
-        "html":"@sample-html-webpack-repo/html-capability"
+        "html-capability": "@sample-html-webpack-repo/html-capability"
     },
     "packageSettings": [
         {
             "match": "@sample-html-webpack-repo/app",
             "bundler": "webpack",
             "bundlerCapabilities": {
-                "html": {
+                "html-capability": {
                     "template": "src/index.ejs",
+                    "inject": "body",
+                    "title": "Minimal Webpack Project with EJS",
+                    "templateParameters": {
+                        "message": "Webpack and EJS!"
+                    }
                 }
             }
         }
